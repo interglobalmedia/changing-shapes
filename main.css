@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: grey; */
+  font-family: "Caveat Brush", cursive;
+}
+
+.square-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#square {
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  height: 150px;
+  width: 150px;
+  background: red;
+}
+
+#btn-square {
+  width: 150px;
+  font-family: "Barlow", sans-serif;
+}
