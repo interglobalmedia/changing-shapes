@@ -24,7 +24,6 @@ function changeShape() {
     square.style.width = "150px";
     square.style.height = "150px";
     square.style.border = "0";
-    square.style.display = "block";
   }
 }
 
