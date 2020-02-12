@@ -9,6 +9,10 @@ body {
   font-family: "Caveat Brush", cursive;
 }
 
+h1 {
+  font-size: 250%;
+}
+
 .square-wrapper {
   display: flex;
   flex-direction: column;
@@ -24,12 +28,23 @@ body {
 #square {
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
-  height: 150px;
-  width: 150px;
+  height: 50vh;
+  width: 50vh;
   background: red;
 }
 
-#btn-square {
-  width: 150px;
-  font-family: "Barlow", sans-serif;
+.btn-wrapper {
+  display: flex;
+  width: 50vh;
+  justify-content: space-between;
 }
+
+#btn-square,
+#btn-refresh {
+  width: 125px;
+  font-family: "Barlow", sans-serif;
+  font-size: 125%;
+  padding: 5px;
+}
+
+@media (max-width: );

@@ -11,22 +11,34 @@ function changeShape() {
     square.style.width = "0";
     square.style.height = "0";
     square.style.border = "0";
-    square.style.borderLeft = "75px solid transparent";
-    square.style.borderRight = "75px solid transparent";
-    square.style.borderBottom = "150px solid #7fbc03";
+    square.style.borderLeft = "25vh solid transparent";
+    square.style.borderRight = "25vh solid transparent";
+    square.style.borderBottom = "50vh solid #7fbc03";
     document.body.style.backgroundColor = "#7b5b80";
   } else {
     square.style.backgroundColor = "red";
-    document.getElementById("square").style.borderRadius = "0";
+    square.style.borderRadius = "0";
     square.style.border = "0";
     document.body.style.backgroundColor = "grey";
     square.style.borderBottom = "0";
-    square.style.width = "150px";
-    square.style.height = "150px";
+    square.style.width = "50vh";
+    square.style.height = "50vh";
     square.style.border = "0";
   }
 }
 
-const button = document.getElementById("btn-square");
+function refreshMe() {
+  const square = document.getElementById("square");
+  square.style.borderRadius = "0";
+  square.style.backgroundColor = "red";
+  square.style.border = "0";
+  square.style.height = "50vh";
+  square.style.width = "50vh";
+  document.body.style.backgroundColor = "#fff";
+}
 
-button.addEventListener("click", changeShape);
+const btnSquare = document.getElementById("btn-square");
+const btnRefresh = document.getElementById("btn-refresh");
+
+btnSquare.addEventListener("click", changeShape);
+btnRefresh.addEventListener("click", refreshMe);
