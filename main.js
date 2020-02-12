@@ -27,11 +27,6 @@ const changeShape = () => {
   }
 };
 
-/* condition based - if hit refresh me button and
-then the change me button, it will immediately change
-to circle.
- */
-
 function refreshMe() {
   const square = document.getElementById("square");
   square.style.borderRadius = "0";
@@ -41,10 +36,6 @@ function refreshMe() {
   square.style.width = "50vh";
   document.body.style.backgroundColor = "#fff";
 }
-
-/* if windowRefresh function is used instead, then  everything
-is cleared, refreshed. Start from clean slate, so not condition based.
-*/
 
 function windowRefresh() {
   window.location.reload();
@@ -59,3 +50,5 @@ btnRefresh.addEventListener("click", windowRefresh);
 function changeBodyBg() {
   document.body.style.backgroundColor = "#a96500";
 }
+
+// body.onload = changeBodyBg();
