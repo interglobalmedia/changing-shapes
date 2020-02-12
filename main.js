@@ -1,4 +1,4 @@
-function changeShape() {
+const changeShape = () => {
   const square = document.getElementById("square");
   if (square.style.backgroundColor === "red") {
     square.style.backgroundColor = "blue";
@@ -25,7 +25,7 @@ function changeShape() {
     square.style.height = "50vh";
     square.style.border = "0";
   }
-}
+};
 
 function refreshMe() {
   const square = document.getElementById("square");
@@ -37,8 +37,18 @@ function refreshMe() {
   document.body.style.backgroundColor = "#fff";
 }
 
+function windowRefresh() {
+  window.location.reload();
+}
+
 const btnSquare = document.getElementById("btn-square");
 const btnRefresh = document.getElementById("btn-refresh");
 
 btnSquare.addEventListener("click", changeShape);
-btnRefresh.addEventListener("click", refreshMe);
+btnRefresh.addEventListener("click", windowRefresh);
+
+function changeBodyBg() {
+  document.body.style.backgroundColor = "#a96500";
+}
+
+// body.onload = changeBodyBg();
