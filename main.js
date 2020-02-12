@@ -11,8 +11,8 @@ const changeShape = () => {
     square.style.width = "0";
     square.style.height = "0";
     square.style.border = "0";
-    square.style.borderLeft = "25vw solid transparent";
-    square.style.borderRight = "25vw solid transparent";
+    square.style.borderLeft = "25vh solid transparent";
+    square.style.borderRight = "25vh solid transparent";
     square.style.borderBottom = "50vh solid #7fbc03";
     document.body.style.backgroundColor = "#7b5b80";
   } else {
